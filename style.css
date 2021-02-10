@@ -1,0 +1,185 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(GOTHIC.TTF);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face
+{
+    font-family: Gothic;
+    src: url(https://www.cssfontstack.com/Century-Gothic);
+}
+body
+{
+}
+.button
+{
+    position: relative;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+}
+.button:hover
+{
+    color: orange;
+    border: none;
+    outline: none;
+}
+.button5
+{
+    background-color: darkorange;
+    border-radius:10px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    outline: none;
+}
+.button5:hover
+{
+    color: white;
+    background-color: #ef6c00;
+    border: none;
+    outline: none;
+}
+.menu-area li a {
+	text-decoration: none;
+	color: black;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: block;
+	padding: 0 40px;
+	font-size: 14px;
+	line-height: 30px;
+	position: relative;
+	z-index: 1;
+}
+.menu-area li {
+	list-style: none;
+	display: inline-block;
+    padding-top: 20px;
+    padding-right: 40px
+}
+
+nav {
+	position: relative;
+	padding: 10px 20px 30px 10px;
+	text-align: right;
+	z-index: 1;
+	background: White;
+	margin: 0 auto;
+
+}
+.logo {
+	width: 15%;
+	float: left;
+	text-transform: uppercase;
+	color: Black;
+	font-size: 35px;
+	text-align: left;
+	padding-left: 6%;
+    padding-top: 0.1%;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    position: absolute;
+}
+.pic
+{
+    width: 5px;
+    height: 5px;
+    margin-top: -6px;
+    cursor: pointer;
+}
+.menu-area li a:hover {
+	background: tomato;
+	color: #fff;
+}
+.middle
+{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-style: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+}
+/* Style the search field */
+form.example input[type=text] {
+    left: 50%;
+  padding: 10px;
+  font-size: 17px;
+  border: transparent;
+  width: 100%;
+  background: #f1f1f1;
+  border-radius: 20px;
+    outline: none;
+
+}
+
+/* Style the submit button */
+form.example button
+{
+    margin-top: 30px;
+    left 50%;
+    padding: 15px;
+    border-radius: 10px;
+    background: orange;
+    color: white;
+    font-size: 18px;
+    border: transparent;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    outline: none;
+}
+
+form.example button:hover {
+  background: #ef6c00;;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.card1:hover
+{
+    transform: translateY(-.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, .4);
+    cursor: pointer;
+}
+
+.card1 li
+{
+    padding-left: 20px;
+    font-family: Century Gothic;
+}
+
+.card1 p
+{
+    text-align: left;
+    padding-left: 16px;
+    padding-right: 10px;
+    font-family: Century Gothic;
+}
