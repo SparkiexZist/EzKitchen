@@ -1,19 +1,8 @@
+let check = 0;
 function searchClick()
 {
-    loaction.replace("Recipe.html");
-//    var searchBar = document.getElementById('searchBar');
-//    var lst = searchBar.value.split(",");
-//    var nodes = document.getElementsByClassName('card1');
-//
-//    for (i = 0; i < nodes.length; i++) {
-//        for (j = 0; j < lst.length; j++) {
-//            if (nodes[i].innerText.toLowerCase().includes(lst[j].toLowerCase())) {
-//                nodes[i].style.display = "block";
-//            } else {
-//                nodes[i].style.display = "none";
-//            }
-//        }
-//    }
+    var input = document.getElementById("searchBarFirst").value;
+    console.log(input);
 }
 
 function recipePage() {
