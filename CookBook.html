@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ez Kitchen</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        img.dim {
+            filter: brightness(60%);
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+    </style>
+    <script src="myScript.js"></script>
+</head>
+
+<body>
+    <div class="custom-padding">
+        <nav>
+            <div class="logo">
+                Ez <br>
+                Kitchen
+            </div>
+            <div class="pic">
+                <img src="Logo/pic.jpeg" style="width: 100px;position: absolute;top: 2%;left: 1%;" onclick="mainPage()">
+            </div>
+            <ul class="menu-area">
+                <li>
+                    <button class="button button1" onclick="recipePage()">RECIPE</button>
+                </li>
+                <li>
+                    <button class="button button2">ORDER</button>
+                </li>
+                <li>
+                    <button class="button button3" style="color: orange">COOKBOOK</button>
+                </li>
+                <li>
+                    <button class="button button4">LOG IN</button>
+                </li>
+                <li>
+                    <button class="button button5">SIGN UP</button>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+    <div id="card-list" class="all-card" style="height: 50%;width: 100%; clear: both;position: relative;z-index: 10;margin-left: : 18%;margin-right: auto; padding-left:26%;">
+
+        <div style="padding-right: 8%">
+        </div>
+        <div style="padding-bottom: 120px; position: relative;padding-left: 25px;">
+        </div>
+
+        <div style="font-size: 20;color: black;background-color: white;width: 450px;height: 600px;display: inline;float: left;margin-right: 80px;margin-bottom: 40px;position: relative;">
+            <img src="Logo/Cook-book.jpg" style="width: 100%;object-fit: cover;display: block;height: 100%;">
+        </div>
+        
+        <div class="contact-card" style="font-size: 20;color: black;background-color: white;width: 450px;height: 600px;display: inline;float: left;margin-right: 80px;margin-bottom: 40px;position: relative;margin-left: auto;-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+-khtml-border-radius: 20px;
+border-radius: 20px; border: 2px solid white;padding: 20px;">
+         <h1 style="text-align: center; font-family: Century Gothic;">
+             Check out the book on
+         </h1>
+         <div style="height:20px; 
+    width:100%; 
+    position:relative;
+    top:13%; 
+    left: 27%">
+             <button class = "book-btn" style="font-size: 20px;" onclick="location.href='https://www.bookdepository.com/The-Complete-Cookbook-for-Young-Chefs-Americas-Test-Kitchen-Kids/9781492670025?redirected=true&utm_medium=Google&utm_campaign=Base1&utm_source=TH&utm_content=The-Complete-Cookbook-for-Young-Chefs&selectCurrency=THB&w=AF5NAU96QNKQCXA8VRPU&pdg=pla-1055310654656:cmp-6921261838:adg-81438836562:crv-389852909219:pos-:dev-c&gclid=CjwKCAiAsaOBBhA4EiwAo0_AnKJtWL_0hl_pgrbjx8EuNTIUF611YKmg2rYtEhTZ_eV9Ae4PVEb5txoCxEMQAvD_BwE'">Book Depository</button>
+         </div>
+         
+         <div style="height:20px; 
+    position:relative;
+    top:23%; 
+    left: 27%">
+             <button class = "book-btn" style="font-size: 20px;width: 187px;" onclick="location.href='https://www.amazon.com/Complete-Baking-Book-Young-Chefs/dp/1492677698'">Amazon</button>
+         </div>
+         
+         <div style="height:20px; 
+    position:relative;
+    top:33%; 
+    left: 27%">
+             <button class = "book-btn" style="font-size: 20px;width: 187px;" onclick="location.href='https://thailand.kinokuniya.com/bw/9781492677697'">Kinokuniya</button>
+         </div>
+         
+         <div style="height:20px; 
+    position:relative;
+    top:43%; 
+    left: 27%">
+             <button class = "book-btn" style="font-size: 20px;width: 187px;" onclick="location.href='https://www.target.com/p/complete-cookbook-for-young-chefs-the-complete-cookbook-for-young-chefs-by-america-39-s-test-kitchen-hardcover/-/A-53646679'">Target</button>
+         </div>
+         
+         <div style="height:20px; 
+    position:relative;
+    top:53%; 
+    left: 27%">
+             <button class = "book-btn" style="font-size: 20px;width: 187px;" onclick="location.href='https://www.goodreads.com/book/show/37827181-the-complete-cookbook-for-young-chefs'">Goodreads</button>
+         </div>
+         
+        </div>
+    </div>
+    <div class="back-image">
+        <img class="dim" src="https://wallpaperaccess.com/full/1843937.jpg">
+    </div>
+</body>
+
+</html>
+
+<!--hello world-->

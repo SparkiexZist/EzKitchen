@@ -184,3 +184,20 @@ form.example::after {
     font-family: Century Gothic;
 }
 
+.book-btn
+{
+    background-color: orange;
+    border-radius:10px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.book-btn:hover
+{
+    background-color: darkorange;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

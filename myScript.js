@@ -12,6 +12,10 @@ function recipePage() {
 function mainPage() {
     location.replace("index.html");
 }
+function cookbookPage()
+{
+    location.replace("CookBook.html");
+}
 
 function hidDiv() {
     var x = document.getElementById("card-1");
