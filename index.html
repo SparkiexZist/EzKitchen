@@ -37,7 +37,7 @@
                     <button class="button button2">ORDER</button>
                 </li>
                 <li>
-                    <button class="button button3">COOKBOOK</button>
+                    <button class="button button3" onclick="cookbookPage()">COOKBOOK</button>
                 </li>
                 <li>
                     <button class="button button4">LOG IN</button>
@@ -57,14 +57,9 @@
             Lets get cooking<br>
             with what you have left
         </p>
-        <form class="example" action="action_page.php">
-            <input type="text" placeholder="Your ingredients." name="search" id="searchBar">
-            <br>
-            <button type="submit" onclick="searchClick()">
-                <i class="fa fa-search"></i>
-                <p>SEARCH</p>
+            <button class="btn-cook" type="submit" onclick="recipePage()">
+                <p>COOK NOW</p>
             </button>
-        </form>
     </div>
 </body>
 
