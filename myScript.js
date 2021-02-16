@@ -35,12 +35,27 @@ function searchFilter() {
     var nodes = document.getElementsByClassName('card1');
 
     for (i = 0; i < nodes.length; i++) {
-        for (j = 0; j < lst.length; j++) {
-            if (nodes[i].innerText.toLowerCase().includes(lst[j].toLowerCase())) {
-                nodes[i].style.display = "block";
-            } else {
-                nodes[i].style.display = "none";
-            }
+        for (j = 0; j < lst.length; j++) 
+        {
+     if(nodes[i].innerText.toLowerCase().search(lst[j].toLowerCase())!= -1)
+                {
+                   nodes[i].style.display = "block"; 
+                }
+            else
+                {
+                    nodes[i].style.display = "none"; 
+                }
+//            if (nodes[i].innerText.toLowerCase().includes(lst[j].toLowerCase())) 
+//            {
+//                nodes[i].style.display = "block";
+//            } else if(nodes[i].style.display == "block")
+//            {
+//                nodes[i].style.display = "none";
+//            }
+//            else
+//            {
+//                nodes[i].style.display = "none";
+//            }
         }
     }
 }
