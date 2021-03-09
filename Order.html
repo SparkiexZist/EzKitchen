@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ez Kitchen</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        img.dim {
+            filter: brightness(60%);
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+    </style>
+    <script src="myScript.js"></script>
+</head>
+
+<body>
+    <div class="custom-padding">
+        <nav>
+            <div class="logo">
+                Ez <br>
+                Kitchen
+            </div>
+            <div class="pic">
+                <img src="Logo/pic.jpeg" style="width: 100px;position: absolute;top: 2%;left: 1%;" onclick="mainPage()">
+            </div>
+            <ul class="menu-area">
+                <li>
+                    <button class="button button1" onclick="recipePage()">RECIPE</button>
+                </li>
+                <li>
+                    <button class="button button2"  style="color: orange">ORDER</button>
+                </li>
+                <li>
+                    <button class="button button3" onclick="cookbookPage()">COOKBOOK</button>
+                </li>
+                <li>
+                    <button class="button button4">LOG IN</button>
+                </li>
+                <li>
+                    <button class="button button5">SIGN UP</button>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+    <div id="card-list" class="all-card" style="height: 50%;width: 100%; clear: both;position: relative;z-index: 10;margin-left: : 18%;margin-right: auto; padding-left:26%;">
+
+        <div style="padding-right: 8%">
+        </div>
+        <div style="padding-bottom: 120px; position: relative;padding-left: 25px;">
+        </div>
+
+        <div style="font-size: 20;color: black;background-color: white;width: 450px;height: 600px;display: inline;float: left;margin-right: 80px;margin-bottom: 40px;position: relative;padding: 20px;">
+            <h1 style="font-family: Century Gothic; text-align: center">
+                YOUR ORDER
+            </h1h>
+        </div>
+        
+        <div class="contact-card" style="font-size: 20;color: black;background-color: white;width: 450px;height: 600px;display: inline;float: left;margin-right: 80px;margin-bottom: 40px;position: relative;margin-left: auto;-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+-khtml-border-radius: 20px;
+border-radius: 20px;padding: 20px;">
+        
+         <h1 style="text-align: center; font-family: Century Gothic;">
+             BILLING DETAILS
+         </h1>
+         <div style="height:20px; 
+    position:relative;
+    top:5%;
+    left: 8%;">
+       <p style="font-family: Century Gothic;font-size: 15px;padding-bottom: 4px;color: gray">
+           First Name<span style="color: red;">*</span>
+       </p>
+        <form class="box" style="width: 100%;">
+            <input type="text" placeholder="" name="searching" id="search"style="padding-left: 5px;width: 350px;height: 35px;border: 3px orange;border-style: solid;outline: none;">
+        </form>
+         </div>
+         
+        <div style="height:20px; 
+    position:relative;
+    top:12%; 
+    left: 8%;">
+            <p style="font-family: Century Gothic;font-size: 15px;padding-bottom: 4px;color: gray">
+           Phone<span style="color: red;">*</span>
+           </p>
+             <form class="box" style="width: 100%;">
+            <input type="text" placeholder="" name="searching" id="search"style="padding-left: 5px;width: 350px;height: 35px;border: 3px orange;border-style: solid;outline: none;">
+        </form>
+         </div>
+         
+         <div style="height:20px; 
+    position:relative;
+    top:19%; 
+    left: 8%;">
+            <p style="font-family: Century Gothic;font-size: 15px;padding-bottom: 4px;color: gray">
+           Country<span style="color: red;">*</span>
+           </p>
+             <form class="box" style="width: 100%;">
+            <input type="text" placeholder="" name="searching" id="search"style="padding-left: 5px;width: 350px;height: 35px;border: 3px orange;border-style: solid;outline: none;">
+        </form>
+         </div>
+         
+         <div style="height:20px; 
+    position:relative;
+    top:26%; 
+    left: 8%;">
+            <p style="font-family: Century Gothic;font-size: 15px;padding-bottom: 4px;color: gray">
+           Address<span style="color: red;">*</span>
+           </p>
+             <form class="box" style="width: 100%;">
+            <input type="text" placeholder="" name="searching" id="search"style="padding-left: 5px;width: 350px;height: 35px;border: 3px orange;border-style: solid;outline: none;">
+        </form>
+         </div>
+         
+         <div style="height:20px; 
+    position:relative;
+    top:34%; 
+    left: 8%;">
+             <form class="box" style="width: 100%;">
+            <input type="text" placeholder="" name="searching" id="search"style="padding-left: 5px;width: 350px;height: 35px;border: 3px grey;border-style: solid;outline: none;">
+        </form>
+         </div>
+         
+        <div style="height:20px; 
+    position:relative;
+    top:38%; 
+    left: 8%;">
+            <p style="font-family: Century Gothic;font-size: 15px;padding-bottom: 4px;color: gray">
+           Card Number<span style="color: red;">*</span>
+           </p>
+             <form class="box" style="width: 100%;">
+            <input type="text" placeholder="" name="searching" id="search"style="padding-left: 5px;width: 350px;height: 35px;border: 3px orange;border-style: solid;outline: none;">
+        </form>
+         </div>
+         
+         <div style="height:20px; 
+    position:relative;
+    top:46%; 
+    left: 8%;">
+            <p style="font-family: Century Gothic;font-size: 15px;padding-bottom: 4px;color: gray">
+           Expiration Date<span style="color: red;">*</span>
+           </p>
+             <form class="box" style="width: 100%;">
+            <input type="text" placeholder="06/23" name="searching" id="search"style="padding-left: 5px;width: 135px;height: 35px;border: 3px orange;border-style: solid;outline: none; font-family: Century Gothic">
+        </form>
+         </div>
+         
+         <div style="height:20px; 
+    position:relative;
+    top:42.3%; 
+    float: right;
+           padding-right: 27px">
+            <p style="font-family: Century Gothic;font-size: 15px;padding-bottom: 4px;color: gray">
+           Security Code<span style="color: red;">*</span>
+           </p>
+             <form class="box" style="width: 100%;">
+            <input type="password" placeholder="CVC/CVV" name="searching" id="search"style="padding-left: 5px;width: 135px;height: 35px;border: 3px orange;border-style: solid;outline: none;font-family: Century Gothic">
+        </form>
+         </div>
+         
+        <button class="btn-cook" type="submit"style="height: 65px;position: relative;left: 8%;top: 47%;border-radius: 0px;width: 350px">
+                <p style="font-size: 30px">PLACE ORDER </p>
+        </button>
+         
+        </div>
+    </div>
+    <div class="back-image">
+        <img class="dim" src="https://wallpaperaccess.com/full/1843937.jpg">
+    </div>
+</body>
+
+</html>
