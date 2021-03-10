@@ -56,10 +56,447 @@
         <div style="padding-bottom: 120px; position: relative;padding-left: 25px;">
         </div>
 
-        <div style="font-size: 20;color: black;background-color: white;width: 450px;height: 600px;display: inline;float: left;margin-right: 80px;margin-bottom: 40px;position: relative;padding: 20px;">
+        <div style="font-size: 20;color: black;background-color: white;width: 450px;height: 600px;display: inline;float: left;margin-right: 80px;margin-bottom: 40px;position: relative;padding: 20px; -moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+-khtml-border-radius: 20px;
+border-radius: 20px;">
             <h1 style="font-family: Century Gothic; text-align: center">
                 YOUR ORDER
             </h1h>
+<FORM Name="myform" style="padding-bottom: 30px;">
+<SELECT NAME="memoryItem" onChange="calculatePrice()" id="first" style="width: 250px; height: 31px;font-size: 15px;font-family: Century Gothic;outline: none;margin-bottom: 10px;margin-top: 50px;">
+  <OPTION value="0">Select ingredient</OPTION>
+  <optgroup label="Vegetable">
+  <OPTION value="0.1">Tomato 100 g ($0.1)</OPTION>
+  <OPTION value="0.1">Potato 100 g ($0.1)</OPTION>
+  <OPTION value="0.15">Onion 100 g ($0.15)</OPTION>
+  <OPTION value="0.3">Peppers 100 g ($0.3)</OPTION>
+  <OPTION value="0.33">Salad mix 150 g ($0.33)</OPTION>
+  <optgroup label="Meat">
+  <OPTION value="0.33">Chicken Breasts 100 g ($0.33)</OPTION>
+  <OPTION value="0.4">Pork fillet 100 g ($0.4)</OPTION>
+  <OPTION value="0.6">Sliced beef 100 g ($0.6)</OPTION>
+  <OPTION value="0.7">Boneless beef 100 g ($0.7)</OPTION>
+  <OPTION value="0.9">Ribeye beef steaks 100 g ($0.9)</OPTION>
+  <OPTION value="1.1">Marinated beef 100 g ($1.1)</OPTION>
+  <OPTION value="5.2">Marinated beef 500 g ($5.2)</OPTION>
+  <OPTION value="2.6">Whole chicken ($2.6)</OPTION>
+  <optgroup label="Seafood">
+  <OPTION value="2.8">Tuna fillet 100 g ($2.8)</OPTION>
+  <OPTION value="3">Salmon filet 100 g ($3)</OPTION>
+  <OPTION value="6">Salmon filet 250 g ($6)</OPTION>
+  <OPTION value="12">Salmon steaks 1 kg ($12)</OPTION>
+  <optgroup label="Sausage">
+  <OPTION value="1">Bacon sliced 100 g ($1)</OPTION>
+  <OPTION value="1.5">Barbecue sausages 100 g ($1.5)</OPTION>
+  <OPTION value="2">Ham sliced 100 g ($2)</OPTION>
+  <OPTION value="2">Salami 100 g ($2)</OPTION>
+  <optgroup label="Cheese">
+  <OPTION value="0.8">White cheese 100 g ($0.8)</OPTION>
+  <OPTION value="0.8">Chadder 100 g ($0.8)</OPTION>
+  <OPTION value="2.5">Hard cheese 100 g ($2.5)</OPTION>
+  <optgroup label="Bread">
+  <OPTION value="2">French baguette 350 g ($2)</OPTION>
+  <OPTION value="2.22">1 Rolls bread ($2.22)</OPTION>
+  <OPTION value="1">1 Bun ($1)</OPTION>
+  <optgroup label="Groat">
+  <OPTION value="0.7">Rice 1 kg ($0.7)</OPTION>
+  <OPTION value="1.5">Pasta 1 kg ($1.5)</OPTION>
+  <OPTION value="1.5">Sugar 1 kg ($1.5)</OPTION>
+  <OPTION value="2">Flour 1 kg ($2)</OPTION>
+  <optgroup label="Dairy Products">
+  <OPTION value="0.45">Sour cream 100 g ($0.45)</OPTION>
+  <OPTION value="1">Milk 1 liter ($1)</OPTION>
+  <OPTION value="3">Milk 1 gallon ($3)</OPTION>
+  <OPTION value="1">Butter 100 g ($1)</OPTION>
+  <OPTION value="10">Butter 1 kg ($10)</OPTION>
+  <OPTION value="0.5">Cottage cheese 100 g ($0.5)</OPTION>
+  <OPTION value="5">Cottage cheese 1 kg ($5)</OPTION>
+  <OPTION value="0.8">Yogurt Danone 1 pcs ($0.8)</OPTION>
+  <OPTION value="5.5">Yogurt Activia 8 pcs ($5.5)</OPTION>
+</SELECT>
+<input type="number" min="0" step="1" id="firstMul" oninput="calculatePrice()" style="width: 50px; text-align: center;height: 31px;font-size: 20px;outline: none;margin-left: 10px;"/>
+
+<SELECT NAME="memoryItem" onChange="calculatePrice()" id="second" style="width: 250px; height: 31px;font-size: 15px;font-family: Century Gothic;outline: none;margin-bottom: 10px;">
+  <OPTION value="0">Select ingredient</OPTION>
+  <optgroup label="Vegetable">
+  <OPTION value="0.1">Tomato 100 g ($0.1)</OPTION>
+  <OPTION value="0.1">Potato 100 g ($0.1)</OPTION>
+  <OPTION value="0.15">Onion 100 g ($0.15)</OPTION>
+  <OPTION value="0.3">Peppers 100 g ($0.3)</OPTION>
+  <OPTION value="0.33">Salad mix 150 g ($0.33)</OPTION>
+  <optgroup label="Meat">
+  <OPTION value="0.33">Chicken Breasts 100 g ($0.33)</OPTION>
+  <OPTION value="0.4">Pork fillet 100 g ($0.4)</OPTION>
+  <OPTION value="0.6">Sliced beef 100 g ($0.6)</OPTION>
+  <OPTION value="0.7">Boneless beef 100 g ($0.7)</OPTION>
+  <OPTION value="0.9">Ribeye beef steaks 100 g ($0.9)</OPTION>
+  <OPTION value="1.1">Marinated beef 100 g ($1.1)</OPTION>
+  <OPTION value="5.2">Marinated beef 500 g ($5.2)</OPTION>
+  <OPTION value="2.6">Whole chicken ($2.6)</OPTION>
+  <optgroup label="Seafood">
+  <OPTION value="2.8">Tuna fillet 100 g ($2.8)</OPTION>
+  <OPTION value="3">Salmon filet 100 g ($3)</OPTION>
+  <OPTION value="6">Salmon filet 250 g ($6)</OPTION>
+  <OPTION value="12">Salmon steaks 1 kg ($12)</OPTION>
+  <optgroup label="Sausage">
+  <OPTION value="1">Bacon sliced 100 g ($1)</OPTION>
+  <OPTION value="1.5">Barbecue sausages 100 g ($1.5)</OPTION>
+  <OPTION value="2">Ham sliced 100 g ($2)</OPTION>
+  <OPTION value="2">Salami 100 g ($2)</OPTION>
+  <optgroup label="Cheese">
+  <OPTION value="0.8">White cheese 100 g ($0.8)</OPTION>
+  <OPTION value="0.8">Chadder 100 g ($0.8)</OPTION>
+  <OPTION value="2.5">Hard cheese 100 g ($2.5)</OPTION>
+  <optgroup label="Bread">
+  <OPTION value="2">French baguette 350 g ($2)</OPTION>
+  <OPTION value="2.22">1 Rolls bread ($2.22)</OPTION>
+  <OPTION value="1">1 Bun ($1)</OPTION>
+  <optgroup label="Groat">
+  <OPTION value="0.7">Rice 1 kg ($0.7)</OPTION>
+  <OPTION value="1.5">Pasta 1 kg ($1.5)</OPTION>
+  <OPTION value="1.5">Sugar 1 kg ($1.5)</OPTION>
+  <OPTION value="2">Flour 1 kg ($2)</OPTION>
+  <optgroup label="Dairy Products">
+  <OPTION value="0.45">Sour cream 100 g ($0.45)</OPTION>
+  <OPTION value="1">Milk 1 liter ($1)</OPTION>
+  <OPTION value="3">Milk 1 gallon ($3)</OPTION>
+  <OPTION value="1">Butter 100 g ($1)</OPTION>
+  <OPTION value="10">Butter 1 kg ($10)</OPTION>
+  <OPTION value="0.5">Cottage cheese 100 g ($0.5)</OPTION>
+  <OPTION value="5">Cottage cheese 1 kg ($5)</OPTION>
+  <OPTION value="0.8">Yogurt Danone 1 pcs ($0.8)</OPTION>
+  <OPTION value="5.5">Yogurt Activia 8 pcs ($5.5)</OPTION>
+</SELECT>
+<input type="number" min="0" step="1" id="secondMul" oninput="calculatePrice()" style="width: 50px; text-align: center;height: 31px;font-size: 20px;outline: none;margin-left: 10px;"/>
+
+<SELECT NAME="memoryItem" onChange="calculatePrice()" id="third" style="width: 250px; height: 31px;font-size: 15px;font-family: Century Gothic;outline: none;margin-bottom: 10px;">
+  <OPTION value="0">Select ingredient</OPTION>
+  <optgroup label="Vegetable">
+  <OPTION value="0.1">Tomato 100 g ($0.1)</OPTION>
+  <OPTION value="0.1">Potato 100 g ($0.1)</OPTION>
+  <OPTION value="0.15">Onion 100 g ($0.15)</OPTION>
+  <OPTION value="0.3">Peppers 100 g ($0.3)</OPTION>
+  <OPTION value="0.33">Salad mix 150 g ($0.33)</OPTION>
+  <optgroup label="Meat">
+  <OPTION value="0.33">Chicken Breasts 100 g ($0.33)</OPTION>
+  <OPTION value="0.4">Pork fillet 100 g ($0.4)</OPTION>
+  <OPTION value="0.6">Sliced beef 100 g ($0.6)</OPTION>
+  <OPTION value="0.7">Boneless beef 100 g ($0.7)</OPTION>
+  <OPTION value="0.9">Ribeye beef steaks 100 g ($0.9)</OPTION>
+  <OPTION value="1.1">Marinated beef 100 g ($1.1)</OPTION>
+  <OPTION value="5.2">Marinated beef 500 g ($5.2)</OPTION>
+  <OPTION value="2.6">Whole chicken ($2.6)</OPTION>
+  <optgroup label="Seafood">
+  <OPTION value="2.8">Tuna fillet 100 g ($2.8)</OPTION>
+  <OPTION value="3">Salmon filet 100 g ($3)</OPTION>
+  <OPTION value="6">Salmon filet 250 g ($6)</OPTION>
+  <OPTION value="12">Salmon steaks 1 kg ($12)</OPTION>
+  <optgroup label="Sausage">
+  <OPTION value="1">Bacon sliced 100 g ($1)</OPTION>
+  <OPTION value="1.5">Barbecue sausages 100 g ($1.5)</OPTION>
+  <OPTION value="2">Ham sliced 100 g ($2)</OPTION>
+  <OPTION value="2">Salami 100 g ($2)</OPTION>
+  <optgroup label="Cheese">
+  <OPTION value="0.8">White cheese 100 g ($0.8)</OPTION>
+  <OPTION value="0.8">Chadder 100 g ($0.8)</OPTION>
+  <OPTION value="2.5">Hard cheese 100 g ($2.5)</OPTION>
+  <optgroup label="Bread">
+  <OPTION value="2">French baguette 350 g ($2)</OPTION>
+  <OPTION value="2.22">1 Rolls bread ($2.22)</OPTION>
+  <OPTION value="1">1 Bun ($1)</OPTION>
+  <optgroup label="Groat">
+  <OPTION value="0.7">Rice 1 kg ($0.7)</OPTION>
+  <OPTION value="1.5">Pasta 1 kg ($1.5)</OPTION>
+  <OPTION value="1.5">Sugar 1 kg ($1.5)</OPTION>
+  <OPTION value="2">Flour 1 kg ($2)</OPTION>
+  <optgroup label="Dairy Products">
+  <OPTION value="0.45">Sour cream 100 g ($0.45)</OPTION>
+  <OPTION value="1">Milk 1 liter ($1)</OPTION>
+  <OPTION value="3">Milk 1 gallon ($3)</OPTION>
+  <OPTION value="1">Butter 100 g ($1)</OPTION>
+  <OPTION value="10">Butter 1 kg ($10)</OPTION>
+  <OPTION value="0.5">Cottage cheese 100 g ($0.5)</OPTION>
+  <OPTION value="5">Cottage cheese 1 kg ($5)</OPTION>
+  <OPTION value="0.8">Yogurt Danone 1 pcs ($0.8)</OPTION>
+  <OPTION value="5.5">Yogurt Activia 8 pcs ($5.5)</OPTION>
+</SELECT>
+<input type="number" min="0" step="1" id="thirdMul" oninput="calculatePrice()" style="width: 50px; text-align: center;height: 31px;font-size: 20px;outline: none;margin-left: 10px;"/>
+
+<SELECT NAME="memoryItem" onChange="calculatePrice()" id="forth" style="width: 250px; height: 31px;font-size: 15px;font-family: Century Gothic;outline: none;margin-bottom: 10px;">
+  <OPTION value="0">Select ingredient</OPTION>
+  <optgroup label="Vegetable">
+  <OPTION value="0.1">Tomato 100 g ($0.1)</OPTION>
+  <OPTION value="0.1">Potato 100 g ($0.1)</OPTION>
+  <OPTION value="0.15">Onion 100 g ($0.15)</OPTION>
+  <OPTION value="0.3">Peppers 100 g ($0.3)</OPTION>
+  <OPTION value="0.33">Salad mix 150 g ($0.33)</OPTION>
+  <optgroup label="Meat">
+  <OPTION value="0.33">Chicken Breasts 100 g ($0.33)</OPTION>
+  <OPTION value="0.4">Pork fillet 100 g ($0.4)</OPTION>
+  <OPTION value="0.6">Sliced beef 100 g ($0.6)</OPTION>
+  <OPTION value="0.7">Boneless beef 100 g ($0.7)</OPTION>
+  <OPTION value="0.9">Ribeye beef steaks 100 g ($0.9)</OPTION>
+  <OPTION value="1.1">Marinated beef 100 g ($1.1)</OPTION>
+  <OPTION value="5.2">Marinated beef 500 g ($5.2)</OPTION>
+  <OPTION value="2.6">Whole chicken ($2.6)</OPTION>
+  <optgroup label="Seafood">
+  <OPTION value="2.8">Tuna fillet 100 g ($2.8)</OPTION>
+  <OPTION value="3">Salmon filet 100 g ($3)</OPTION>
+  <OPTION value="6">Salmon filet 250 g ($6)</OPTION>
+  <OPTION value="12">Salmon steaks 1 kg ($12)</OPTION>
+  <optgroup label="Sausage">
+  <OPTION value="1">Bacon sliced 100 g ($1)</OPTION>
+  <OPTION value="1.5">Barbecue sausages 100 g ($1.5)</OPTION>
+  <OPTION value="2">Ham sliced 100 g ($2)</OPTION>
+  <OPTION value="2">Salami 100 g ($2)</OPTION>
+  <optgroup label="Cheese">
+  <OPTION value="0.8">White cheese 100 g ($0.8)</OPTION>
+  <OPTION value="0.8">Chadder 100 g ($0.8)</OPTION>
+  <OPTION value="2.5">Hard cheese 100 g ($2.5)</OPTION>
+  <optgroup label="Bread">
+  <OPTION value="2">French baguette 350 g ($2)</OPTION>
+  <OPTION value="2.22">1 Rolls bread ($2.22)</OPTION>
+  <OPTION value="1">1 Bun ($1)</OPTION>
+  <optgroup label="Groat">
+  <OPTION value="0.7">Rice 1 kg ($0.7)</OPTION>
+  <OPTION value="1.5">Pasta 1 kg ($1.5)</OPTION>
+  <OPTION value="1.5">Sugar 1 kg ($1.5)</OPTION>
+  <OPTION value="2">Flour 1 kg ($2)</OPTION>
+  <optgroup label="Dairy Products">
+  <OPTION value="0.45">Sour cream 100 g ($0.45)</OPTION>
+  <OPTION value="1">Milk 1 liter ($1)</OPTION>
+  <OPTION value="3">Milk 1 gallon ($3)</OPTION>
+  <OPTION value="1">Butter 100 g ($1)</OPTION>
+  <OPTION value="10">Butter 1 kg ($10)</OPTION>
+  <OPTION value="0.5">Cottage cheese 100 g ($0.5)</OPTION>
+  <OPTION value="5">Cottage cheese 1 kg ($5)</OPTION>
+  <OPTION value="0.8">Yogurt Danone 1 pcs ($0.8)</OPTION>
+  <OPTION value="5.5">Yogurt Activia 8 pcs ($5.5)</OPTION>
+</SELECT>
+
+<input type="number" min="0" step="1" id="forthMul" oninput="calculatePrice()" style="width: 50px; text-align: center;height: 31px;font-size: 20px;outline: none;margin-left: 10px;"/>
+
+<SELECT NAME="memoryItem" onChange="calculatePrice()" id="fifth" style="width: 250px; height: 31px;font-size: 15px;font-family: Century Gothic;outline: none;margin-bottom: 10px;">
+  <OPTION value="0">Select ingredient</OPTION>
+  <optgroup label="Vegetable">
+  <OPTION value="0.1">Tomato 100 g ($0.1)</OPTION>
+  <OPTION value="0.1">Potato 100 g ($0.1)</OPTION>
+  <OPTION value="0.15">Onion 100 g ($0.15)</OPTION>
+  <OPTION value="0.3">Peppers 100 g ($0.3)</OPTION>
+  <OPTION value="0.33">Salad mix 150 g ($0.33)</OPTION>
+  <optgroup label="Meat">
+  <OPTION value="0.33">Chicken Breasts 100 g ($0.33)</OPTION>
+  <OPTION value="0.4">Pork fillet 100 g ($0.4)</OPTION>
+  <OPTION value="0.6">Sliced beef 100 g ($0.6)</OPTION>
+  <OPTION value="0.7">Boneless beef 100 g ($0.7)</OPTION>
+  <OPTION value="0.9">Ribeye beef steaks 100 g ($0.9)</OPTION>
+  <OPTION value="1.1">Marinated beef 100 g ($1.1)</OPTION>
+  <OPTION value="5.2">Marinated beef 500 g ($5.2)</OPTION>
+  <OPTION value="2.6">Whole chicken ($2.6)</OPTION>
+  <optgroup label="Seafood">
+  <OPTION value="2.8">Tuna fillet 100 g ($2.8)</OPTION>
+  <OPTION value="3">Salmon filet 100 g ($3)</OPTION>
+  <OPTION value="6">Salmon filet 250 g ($6)</OPTION>
+  <OPTION value="12">Salmon steaks 1 kg ($12)</OPTION>
+  <optgroup label="Sausage">
+  <OPTION value="1">Bacon sliced 100 g ($1)</OPTION>
+  <OPTION value="1.5">Barbecue sausages 100 g ($1.5)</OPTION>
+  <OPTION value="2">Ham sliced 100 g ($2)</OPTION>
+  <OPTION value="2">Salami 100 g ($2)</OPTION>
+  <optgroup label="Cheese">
+  <OPTION value="0.8">White cheese 100 g ($0.8)</OPTION>
+  <OPTION value="0.8">Chadder 100 g ($0.8)</OPTION>
+  <OPTION value="2.5">Hard cheese 100 g ($2.5)</OPTION>
+  <optgroup label="Bread">
+  <OPTION value="2">French baguette 350 g ($2)</OPTION>
+  <OPTION value="2.22">1 Rolls bread ($2.22)</OPTION>
+  <OPTION value="1">1 Bun ($1)</OPTION>
+  <optgroup label="Groat">
+  <OPTION value="0.7">Rice 1 kg ($0.7)</OPTION>
+  <OPTION value="1.5">Pasta 1 kg ($1.5)</OPTION>
+  <OPTION value="1.5">Sugar 1 kg ($1.5)</OPTION>
+  <OPTION value="2">Flour 1 kg ($2)</OPTION>
+  <optgroup label="Dairy Products">
+  <OPTION value="0.45">Sour cream 100 g ($0.45)</OPTION>
+  <OPTION value="1">Milk 1 liter ($1)</OPTION>
+  <OPTION value="3">Milk 1 gallon ($3)</OPTION>
+  <OPTION value="1">Butter 100 g ($1)</OPTION>
+  <OPTION value="10">Butter 1 kg ($10)</OPTION>
+  <OPTION value="0.5">Cottage cheese 100 g ($0.5)</OPTION>
+  <OPTION value="5">Cottage cheese 1 kg ($5)</OPTION>
+  <OPTION value="0.8">Yogurt Danone 1 pcs ($0.8)</OPTION>
+  <OPTION value="5.5">Yogurt Activia 8 pcs ($5.5)</OPTION>
+</SELECT>
+
+<input type="number" min="0" step="1" id="fifthMul" oninput="calculatePrice()" style="width: 50px; text-align: center;height: 31px;font-size: 20px;outline: none;margin-left: 10px;"/>
+
+<SELECT NAME="memoryItem" onChange="calculatePrice()" id="sixth" style="width: 250px; height: 31px;font-size: 15px;font-family: Century Gothic;outline: none;margin-bottom: 10px;">
+  <OPTION value="0">Select ingredient</OPTION>
+  <optgroup label="Vegetable">
+  <OPTION value="0.1">Tomato 100 g ($0.1)</OPTION>
+  <OPTION value="0.1">Potato 100 g ($0.1)</OPTION>
+  <OPTION value="0.15">Onion 100 g ($0.15)</OPTION>
+  <OPTION value="0.3">Peppers 100 g ($0.3)</OPTION>
+  <OPTION value="0.33">Salad mix 150 g ($0.33)</OPTION>
+  <optgroup label="Meat">
+  <OPTION value="0.33">Chicken Breasts 100 g ($0.33)</OPTION>
+  <OPTION value="0.4">Pork fillet 100 g ($0.4)</OPTION>
+  <OPTION value="0.6">Sliced beef 100 g ($0.6)</OPTION>
+  <OPTION value="0.7">Boneless beef 100 g ($0.7)</OPTION>
+  <OPTION value="0.9">Ribeye beef steaks 100 g ($0.9)</OPTION>
+  <OPTION value="1.1">Marinated beef 100 g ($1.1)</OPTION>
+  <OPTION value="5.2">Marinated beef 500 g ($5.2)</OPTION>
+  <OPTION value="2.6">Whole chicken ($2.6)</OPTION>
+  <optgroup label="Seafood">
+  <OPTION value="2.8">Tuna fillet 100 g ($2.8)</OPTION>
+  <OPTION value="3">Salmon filet 100 g ($3)</OPTION>
+  <OPTION value="6">Salmon filet 250 g ($6)</OPTION>
+  <OPTION value="12">Salmon steaks 1 kg ($12)</OPTION>
+  <optgroup label="Sausage">
+  <OPTION value="1">Bacon sliced 100 g ($1)</OPTION>
+  <OPTION value="1.5">Barbecue sausages 100 g ($1.5)</OPTION>
+  <OPTION value="2">Ham sliced 100 g ($2)</OPTION>
+  <OPTION value="2">Salami 100 g ($2)</OPTION>
+  <optgroup label="Cheese">
+  <OPTION value="0.8">White cheese 100 g ($0.8)</OPTION>
+  <OPTION value="0.8">Chadder 100 g ($0.8)</OPTION>
+  <OPTION value="2.5">Hard cheese 100 g ($2.5)</OPTION>
+  <optgroup label="Bread">
+  <OPTION value="2">French baguette 350 g ($2)</OPTION>
+  <OPTION value="2.22">1 Rolls bread ($2.22)</OPTION>
+  <OPTION value="1">1 Bun ($1)</OPTION>
+  <optgroup label="Groat">
+  <OPTION value="0.7">Rice 1 kg ($0.7)</OPTION>
+  <OPTION value="1.5">Pasta 1 kg ($1.5)</OPTION>
+  <OPTION value="1.5">Sugar 1 kg ($1.5)</OPTION>
+  <OPTION value="2">Flour 1 kg ($2)</OPTION>
+  <optgroup label="Dairy Products">
+  <OPTION value="0.45">Sour cream 100 g ($0.45)</OPTION>
+  <OPTION value="1">Milk 1 liter ($1)</OPTION>
+  <OPTION value="3">Milk 1 gallon ($3)</OPTION>
+  <OPTION value="1">Butter 100 g ($1)</OPTION>
+  <OPTION value="10">Butter 1 kg ($10)</OPTION>
+  <OPTION value="0.5">Cottage cheese 100 g ($0.5)</OPTION>
+  <OPTION value="5">Cottage cheese 1 kg ($5)</OPTION>
+  <OPTION value="0.8">Yogurt Danone 1 pcs ($0.8)</OPTION>
+  <OPTION value="5.5">Yogurt Activia 8 pcs ($5.5)</OPTION>
+</SELECT>
+
+<input type="number" min="0" step="1" id="sixthMul" oninput="calculatePrice()" style="width: 50px; text-align: center;height: 31px;font-size: 20px;outline: none;margin-left: 10px;"/>
+
+<SELECT NAME="memoryItem" onChange="calculatePrice()" id="seventh" style="width: 250px; height: 31px;font-size: 15px;font-family: Century Gothic;outline: none;margin-bottom: 10px;">
+  <OPTION value="0">Select ingredient</OPTION>
+  <optgroup label="Vegetable">
+  <OPTION value="0.1">Tomato 100 g ($0.1)</OPTION>
+  <OPTION value="0.1">Potato 100 g ($0.1)</OPTION>
+  <OPTION value="0.15">Onion 100 g ($0.15)</OPTION>
+  <OPTION value="0.3">Peppers 100 g ($0.3)</OPTION>
+  <OPTION value="0.33">Salad mix 150 g ($0.33)</OPTION>
+  <optgroup label="Meat">
+  <OPTION value="0.33">Chicken Breasts 100 g ($0.33)</OPTION>
+  <OPTION value="0.4">Pork fillet 100 g ($0.4)</OPTION>
+  <OPTION value="0.6">Sliced beef 100 g ($0.6)</OPTION>
+  <OPTION value="0.7">Boneless beef 100 g ($0.7)</OPTION>
+  <OPTION value="0.9">Ribeye beef steaks 100 g ($0.9)</OPTION>
+  <OPTION value="1.1">Marinated beef 100 g ($1.1)</OPTION>
+  <OPTION value="5.2">Marinated beef 500 g ($5.2)</OPTION>
+  <OPTION value="2.6">Whole chicken ($2.6)</OPTION>
+  <optgroup label="Seafood">
+  <OPTION value="2.8">Tuna fillet 100 g ($2.8)</OPTION>
+  <OPTION value="3">Salmon filet 100 g ($3)</OPTION>
+  <OPTION value="6">Salmon filet 250 g ($6)</OPTION>
+  <OPTION value="12">Salmon steaks 1 kg ($12)</OPTION>
+  <optgroup label="Sausage">
+  <OPTION value="1">Bacon sliced 100 g ($1)</OPTION>
+  <OPTION value="1.5">Barbecue sausages 100 g ($1.5)</OPTION>
+  <OPTION value="2">Ham sliced 100 g ($2)</OPTION>
+  <OPTION value="2">Salami 100 g ($2)</OPTION>
+  <optgroup label="Cheese">
+  <OPTION value="0.8">White cheese 100 g ($0.8)</OPTION>
+  <OPTION value="0.8">Chadder 100 g ($0.8)</OPTION>
+  <OPTION value="2.5">Hard cheese 100 g ($2.5)</OPTION>
+  <optgroup label="Bread">
+  <OPTION value="2">French baguette 350 g ($2)</OPTION>
+  <OPTION value="2.22">1 Rolls bread ($2.22)</OPTION>
+  <OPTION value="1">1 Bun ($1)</OPTION>
+  <optgroup label="Groat">
+  <OPTION value="0.7">Rice 1 kg ($0.7)</OPTION>
+  <OPTION value="1.5">Pasta 1 kg ($1.5)</OPTION>
+  <OPTION value="1.5">Sugar 1 kg ($1.5)</OPTION>
+  <OPTION value="2">Flour 1 kg ($2)</OPTION>
+  <optgroup label="Dairy Products">
+  <OPTION value="0.45">Sour cream 100 g ($0.45)</OPTION>
+  <OPTION value="1">Milk 1 liter ($1)</OPTION>
+  <OPTION value="3">Milk 1 gallon ($3)</OPTION>
+  <OPTION value="1">Butter 100 g ($1)</OPTION>
+  <OPTION value="10">Butter 1 kg ($10)</OPTION>
+  <OPTION value="0.5">Cottage cheese 100 g ($0.5)</OPTION>
+  <OPTION value="5">Cottage cheese 1 kg ($5)</OPTION>
+  <OPTION value="0.8">Yogurt Danone 1 pcs ($0.8)</OPTION>
+  <OPTION value="5.5">Yogurt Activia 8 pcs ($5.5)</OPTION>
+</SELECT>
+
+<input type="number" min="0" step="1" id="seventhMul" oninput="calculatePrice()" style="width: 50px; text-align: center;height: 31px;font-size: 20px;outline: none;margin-left: 10px;"/>
+
+<SELECT NAME="memoryItem" onChange="calculatePrice()" id="eight" style="width: 250px; height: 31px;font-size: 15px;font-family: Century Gothic;outline: none;margin-bottom: 10px;">
+  <OPTION value="0">Select ingredient</OPTION>
+  <optgroup label="Vegetable">
+  <OPTION value="0.1">Tomato 100 g ($0.1)</OPTION>
+  <OPTION value="0.1">Potato 100 g ($0.1)</OPTION>
+  <OPTION value="0.15">Onion 100 g ($0.15)</OPTION>
+  <OPTION value="0.3">Peppers 100 g ($0.3)</OPTION>
+  <OPTION value="0.33">Salad mix 150 g ($0.33)</OPTION>
+  <optgroup label="Meat">
+  <OPTION value="0.33">Chicken Breasts 100 g ($0.33)</OPTION>
+  <OPTION value="0.4">Pork fillet 100 g ($0.4)</OPTION>
+  <OPTION value="0.6">Sliced beef 100 g ($0.6)</OPTION>
+  <OPTION value="0.7">Boneless beef 100 g ($0.7)</OPTION>
+  <OPTION value="0.9">Ribeye beef steaks 100 g ($0.9)</OPTION>
+  <OPTION value="1.1">Marinated beef 100 g ($1.1)</OPTION>
+  <OPTION value="5.2">Marinated beef 500 g ($5.2)</OPTION>
+  <OPTION value="2.6">Whole chicken ($2.6)</OPTION>
+  <optgroup label="Seafood">
+  <OPTION value="2.8">Tuna fillet 100 g ($2.8)</OPTION>
+  <OPTION value="3">Salmon filet 100 g ($3)</OPTION>
+  <OPTION value="6">Salmon filet 250 g ($6)</OPTION>
+  <OPTION value="12">Salmon steaks 1 kg ($12)</OPTION>
+  <optgroup label="Sausage">
+  <OPTION value="1">Bacon sliced 100 g ($1)</OPTION>
+  <OPTION value="1.5">Barbecue sausages 100 g ($1.5)</OPTION>
+  <OPTION value="2">Ham sliced 100 g ($2)</OPTION>
+  <OPTION value="2">Salami 100 g ($2)</OPTION>
+  <optgroup label="Cheese">
+  <OPTION value="0.8">White cheese 100 g ($0.8)</OPTION>
+  <OPTION value="0.8">Chadder 100 g ($0.8)</OPTION>
+  <OPTION value="2.5">Hard cheese 100 g ($2.5)</OPTION>
+  <optgroup label="Bread">
+  <OPTION value="2">French baguette 350 g ($2)</OPTION>
+  <OPTION value="2.22">1 Rolls bread ($2.22)</OPTION>
+  <OPTION value="1">1 Bun ($1)</OPTION>
+  <optgroup label="Groat">
+  <OPTION value="0.7">Rice 1 kg ($0.7)</OPTION>
+  <OPTION value="1.5">Pasta 1 kg ($1.5)</OPTION>
+  <OPTION value="1.5">Sugar 1 kg ($1.5)</OPTION>
+  <OPTION value="2">Flour 1 kg ($2)</OPTION>
+  <optgroup label="Dairy Products">
+  <OPTION value="0.45">Sour cream 100 g ($0.45)</OPTION>
+  <OPTION value="1">Milk 1 liter ($1)</OPTION>
+  <OPTION value="3">Milk 1 gallon ($3)</OPTION>
+  <OPTION value="1">Butter 100 g ($1)</OPTION>
+  <OPTION value="10">Butter 1 kg ($10)</OPTION>
+  <OPTION value="0.5">Cottage cheese 100 g ($0.5)</OPTION>
+  <OPTION value="5">Cottage cheese 1 kg ($5)</OPTION>
+  <OPTION value="0.8">Yogurt Danone 1 pcs ($0.8)</OPTION>
+  <OPTION value="5.5">Yogurt Activia 8 pcs ($5.5)</OPTION>
+</SELECT>
+
+<input type="number" min="0" step="1" id="eightMul" oninput="calculatePrice()" style="width: 50px; text-align: center;height: 31px;font-size: 20px;outline: none;margin-left: 10px;"/>
+
+</FORM>
+
+<p style="float: left;padding-left: 45px">Total : </p><INPUT type="text" id="PicExtPrice" Size=8 style="outline: none;background-color: transparent;border:none;font-size: 30px;text-align: right;padding-right: 10px;color: orange;font-family: Century Gothic;padding-left: "disabled="disable"><span>                 $</span>
+        
         </div>
         
         <div class="contact-card" style="font-size: 20;color: black;background-color: white;width: 450px;height: 600px;display: inline;float: left;margin-right: 80px;margin-bottom: 40px;position: relative;margin-left: auto;-moz-border-radius: 20px;

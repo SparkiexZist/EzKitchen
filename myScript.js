@@ -68,3 +68,58 @@ function searchFilter() {
         }
     }
 }
+
+function calculatePrice(myform){
+    
+  var inpf = document.getElementById("firstMul").value;
+  var inps = document.getElementById("secondMul").value;
+  var inpt = document.getElementById("thirdMul").value;
+  var inptfo = document.getElementById("forthMul").value;
+  var inptfif = document.getElementById("fifthMul").value;
+  var inpsixth = document.getElementById("sixthMul").value;
+  var inpseventh = document.getElementById("seventhMul").value;
+  var inpeight = document.getElementById("eightMul").value;
+
+  //Get selected data  
+  var elt = document.getElementById("first");
+  var memory = elt.options[elt.selectedIndex].value;
+    
+  var elt = document.getElementById("second");
+  var hdd = elt.options[elt.selectedIndex].value;
+    
+  var elt = document.getElementById("third");
+  var network = elt.options[elt.selectedIndex].value;
+    
+  var elt = document.getElementById("forth");
+  var forth_network = elt.options[elt.selectedIndex].value;
+
+  var elt = document.getElementById("fifth");
+  var fifth = elt.options[elt.selectedIndex].value;
+    
+  var elt = document.getElementById("sixth");
+  var sixth = elt.options[elt.selectedIndex].value;
+    
+  var elt = document.getElementById("seventh");
+  var seventh = elt.options[elt.selectedIndex].value;
+    
+  var elt = document.getElementById("eight");
+  var eight = elt.options[elt.selectedIndex].value;
+//  var first_mul = document.getElementById("firstMul").value;
+    
+//  convert data to integers
+  memory = parseFloat(memory);
+  hdd = parseFloat(hdd);
+  network = parseFloat(network);
+  forth_network = parseFloat(forth_network);
+  fifth = parseFloat(fifth);
+  sixth = parseFloat(sixth);
+  seventh = parseFloat(seventh);
+  eight = parseFloat(eight);
+    
+  //calculate total value  
+  var total = (memory*inpf)+(hdd*inps)+(network*inpt)+(forth_network*inptfo)+(fifth*inptfif)+(sixth*inpsixth)+(seventh*inpseventh)+(eight*inpeight);
+    
+  //print value to  PicExtPrice 
+  document.getElementById("PicExtPrice").value=total.toFixed(2);
+
+}
